@@ -37,7 +37,7 @@ def ping():
         print(packet_transmit.set(ping_result.packet_transmit))
     
     if ping_result.packet_receive is not None:
-        print(packet_receive.set(ping_result.packet_transmit))
+        print(packet_receive.set(ping_result.packet_receive))
 
     if ping_result.rtt_min is not None:
         print(rtt_min.set(ping_result.rtt_min))
