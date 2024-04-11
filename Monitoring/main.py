@@ -23,11 +23,11 @@ def read_yaml():
 #intialize metric types     
 packet_loss_count = Gauge("packet_loss_count", "Packet loss")
 packet_loss_rate = Gauge("packet_loss_rate","Packet Loss Rate")
-packet_transmit = Gauge('packet_transmit', "Packets Trasmitted") #,['host'])
-packet_receive = Gauge('packet_receive', "Packets Recieved")#,['host'])
-rtt_min = Gauge('rtt_min', "Round trip time minimum")#,['host'])
-rtt_avg = Gauge('rtt_avg', "Round trip time average")#,['host'])
-rtt_max = Gauge('rtt_max', "Round trip time maximum")#,['host'])
+packet_transmit = Gauge('packet_transmit', "Packets Trasmitted") 
+packet_receive = Gauge('packet_receive', "Packets Recieved")
+rtt_min = Gauge('rtt_min', "Round trip time minimum")
+rtt_avg = Gauge('rtt_avg', "Round trip time average")
+rtt_max = Gauge('rtt_max', "Round trip time maximum")
 
 def ping(http_port, website, duration):
     start_http_server(http_port)
