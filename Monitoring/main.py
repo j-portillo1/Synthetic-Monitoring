@@ -21,13 +21,13 @@ def read_yaml():
         print(error)
 
 #intialize metric types     
-packet_loss_count = Gauge("packet_loss_count", "Packet loss")
-packet_loss_rate = Gauge("packet_loss_rate","Packet Loss Rate")
-packet_transmit = Gauge('packet_transmit', "Packets Trasmitted") 
-packet_receive = Gauge('packet_receive', "Packets Recieved")
-rtt_min = Gauge('rtt_min', "Round trip time minimum")
-rtt_avg = Gauge('rtt_avg', "Round trip time average")
-rtt_max = Gauge('rtt_max', "Round trip time maximum")
+packet_loss_count = Gauge("packet_loss_count", "Packet loss", ['host'])
+packet_loss_rate = Gauge("packet_loss_rate","Packet Loss Rate",['host'])
+packet_transmit = Gauge('packet_transmit', "Packets Trasmitted",['host']) 
+packet_receive = Gauge('packet_receive', "Packets Recieved",['host'])
+rtt_min = Gauge('rtt_min', "Round trip time minimum",['host'])
+rtt_avg = Gauge('rtt_avg', "Round trip time average",['host'])
+rtt_max = Gauge('rtt_max', "Round trip time maximum",['host'])
 
 def ping(http_port, website, duration):
     start_http_server(http_port)
@@ -52,13 +52,13 @@ def ping(http_port, website, duration):
         packets_lost_rt = ping_result['packet_loss_rate']
         
         #set metric values 
-        rtt_min.set(latency)
-        rtt_avg.set(latency_min)
-        rtt_max.set(latency_max)
-        packet_receive.set(packets_received)
-        packet_transmit.set(packets_transmited)
-        packet_loss_count.set(packets_lost)
-        packet_loss_rate.set(packets_lost_rt)
+        rtt_min.labels(host=website).set(latency)
+        rtt_avg.labels(host=website).set(latency_min)
+        rtt_max.labels(host=website).set(latency_max)
+        packet_receive.labels(host=website).set(packets_received)
+        packet_transmit.labels(host=website).set(packets_transmited)
+        packet_loss_count.labels(host=website).set(packets_lost)
+        packet_loss_rate.labels(host=website).set(packets_lost_rt)
         time.sleep(3)
         
 
