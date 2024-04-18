@@ -34,7 +34,7 @@ and download based on your OS.
 
 ## Interactive System Design Diagram 
 
-![Screenshot (235)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/f2ad646b-7788-4951-a1eb-e579d8f3ac3d, width="280" height="300")
+![Screenshot (235)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/f2ad646b-7788-4951-a1eb-e579d8f3ac3d).
  
 ## Example Results
 ### Prometheus:
