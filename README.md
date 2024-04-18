@@ -5,7 +5,7 @@ Repo for developing a Ping monitor
 This project develops a ping monitor by using the Ping Parsing and Prometheus library with python  to collect metrics and Grafana to help visualize them. 
 
 ## Synthetic Monitoring 
-Synthetic Monitoring is the simulation of real user behaviors and actions on web pages in order to identify potential issues and improve functioannlity, performance and avaliability before issues become visible to users. 
+Synthetic Monitoring is the simulation of real user behaviors and actions on web pages in order to identify potential issues and improve functionality, performance and availability before issues become visible to users. 
 
 ## Getting Started 
 
@@ -32,3 +32,13 @@ Click the link [Grafana Install](
 https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
 and download based on your OS. 
 
+## Interactive System Design Diagram 
+
+![Screenshot (235)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/f2ad646b-7788-4951-a1eb-e579d8f3ac3d)
+
+## Example Results
+### Prometheus:
+![Screenshot (244)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/25f455f3-0594-4eca-9330-a2a3053ddaac)
+
+### Grafana 
+![Screenshot (248)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/a915c3e6-23d1-4137-97d8-6e0944069d68)
