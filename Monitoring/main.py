@@ -81,7 +81,7 @@ def main():
         while True:
             for website_info in yaml_data['monitor_targets']:
                 website = website_info['website']
-                duration = website_info['duration']
+                duration = yaml_data['duration']
                
                 metrics = ping(website,duration)
                 if metrics is not None:
@@ -89,7 +89,6 @@ def main():
                     set_metrics(website, metrics)
                 else:
                     print("Failed to collect metrics")
-
     else:
         print("Error with YAML file")
 

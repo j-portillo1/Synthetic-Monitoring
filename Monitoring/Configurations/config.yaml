@@ -1,12 +1,9 @@
 monitor_targets:
   - website: "google.com"
-    duration: 5
-    port: 8989
   - website: "target.com"
-    duration: 5
-    port: 8989
   - website: "youtube.com"
-    duration: 5
-    port: 8989
-  
+    
+duration: 5  
+port: 8989
+
 
