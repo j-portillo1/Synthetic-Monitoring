@@ -6,7 +6,8 @@ import yaml
 
 #check and read yaml file 
 def read_yaml(): 
-    
+    path = "Monitoring/Configurations/config.yaml" 
+
     try:
         with open(path, 'r') as file:
             yaml_data = yaml.safe_load(file)
@@ -86,7 +87,6 @@ def main():
                 if metrics is not None:
                     print("Metrics collected successfully")
                     set_metrics(website, metrics)
-                    
                 else:
                     print("Failed to collect metrics")
 
