@@ -33,8 +33,9 @@ https://grafana.com/docs/grafana/latest/setup-grafana/installation/)
 and download based on your OS. 
 
 ## Interactive System Design Diagram 
+![Screenshot (250)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/26b6d552-7fee-4315-9b95-7631c5cee58c)
 
-![Screenshot (235)](https://github.com/j-portillo1/Synthetic-Monitoring/assets/144365700/f2ad646b-7788-4951-a1eb-e579d8f3ac3d).
+
  
 ## Example Results
 ### Prometheus:
